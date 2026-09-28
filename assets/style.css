@@ -742,3 +742,53 @@ footer h5::after{background:var(--glow)}
   nav.main .sub a{color:#b9c7da;border-radius:3px}
   nav.main .sub a:hover{background:rgba(94,224,106,.1);color:#fff}
 }
+
+/* ===== v5 经营理念：一生做一事，一事做一生 ===== */
+.tb-motto b{color:var(--glow);font-weight:600;letter-spacing:.12em}
+.h-motto{display:flex;align-items:center;gap:12px;margin:-4px 0 22px;font-size:clamp(17px,2vw,22px);letter-spacing:.28em;color:#dfe8f5;font-weight:500}
+.h-motto .mono{font-size:11px;letter-spacing:.1em;color:var(--deep);background:var(--glow);padding:3px 7px;border-radius:3px;font-weight:600}
+.motto{position:relative;overflow:hidden;background:radial-gradient(1000px 500px at 80% 0%,#0f2d5c 0%,transparent 60%),var(--deep);color:#fff;padding:120px 0 90px;margin-top:70px}
+.motto .wrap{position:relative;z-index:2}
+.motto-chroma{position:absolute;left:0;right:0;bottom:0;width:100%;height:180px;opacity:.5}
+.motto-chroma path{fill:none;stroke:var(--glow);stroke-width:1.4}
+.mt-eyebrow{color:var(--glow);font-size:13px;margin-bottom:26px}
+.mt-words{font-size:clamp(44px,8.4vw,112px);line-height:1.12;font-weight:800;letter-spacing:.06em;margin:0 0 56px;display:flex;flex-direction:column}
+.mt-words .l2{align-self:flex-end;padding-right:2%}
+.mt-words em{font-style:normal;color:var(--glow);text-shadow:0 0 34px rgba(94,224,106,.45);position:relative}
+.mt-words em::after{display:none}
+.mt-eq{display:grid;grid-template-columns:repeat(3,1fr);border:1px solid rgba(94,224,106,.28);background:rgba(6,20,43,.6);backdrop-filter:blur(3px)}
+.mt-cell{padding:30px 28px;min-width:0}
+.mt-cell+.mt-cell{border-left:1px solid rgba(94,224,106,.28)}
+.mt-k{color:var(--glow);font-size:13px;margin-bottom:16px}
+.mt-cell p{color:#a9b9d0;font-size:14px;margin:14px 0 0;line-height:1.7}
+.mt-cell p b{color:#fff;font-size:18px;margin-right:6px}
+.mt-big{font-size:64px;line-height:1;font-weight:700;color:#fff}
+.mt-big small{font-size:22px;color:var(--glow);margin-left:4px}
+.mt-cell .tiles{margin:0}
+.mt-span{position:relative;display:flex;justify-content:space-between;margin-top:14px;padding-top:12px;font-size:11px;color:#7f93b0}
+.mt-span i{position:absolute;left:0;right:0;top:0;height:3px;background:linear-gradient(90deg,rgba(94,224,106,.25),var(--glow));border-radius:2px}
+.mt-line{list-style:none;padding:0;margin:48px 0 0;display:grid;grid-template-columns:repeat(4,1fr);gap:0;position:relative}
+.mt-line::before{content:"";position:absolute;left:0;right:0;top:9px;height:1px;background:rgba(255,255,255,.18)}
+.mt-line li{position:relative;padding:34px 22px 0 0}
+.mt-line li::before{content:"";position:absolute;left:0;top:4px;width:11px;height:11px;border-radius:50%;background:var(--deep);border:2px solid var(--glow);box-shadow:0 0 12px var(--glow)}
+.mt-line b{font-size:34px;color:#fff;font-weight:700;display:inline-block;margin-right:8px}
+.mt-line em{font-style:normal;font-size:13px;color:var(--glow);letter-spacing:.2em}
+.mt-line span{display:block;color:#a9b9d0;font-size:14px;line-height:1.7;margin-top:6px}
+.motto + .block{padding-top:90px}
+.motto-lead{display:grid;grid-template-columns:auto 1fr;gap:44px;align-items:center;background:var(--deep);color:#fff;padding:40px 44px;margin-bottom:22px;border-left:4px solid var(--glow);position:relative;overflow:hidden}
+.motto-lead::after{content:"";position:absolute;inset:0;background-image:linear-gradient(rgba(94,224,106,.06) 1px,transparent 1px),linear-gradient(90deg,rgba(94,224,106,.06) 1px,transparent 1px);background-size:24px 24px;pointer-events:none}
+.ml-l span{display:block;color:var(--glow);font-size:12px;margin-bottom:10px}
+.ml-l b{font-size:clamp(28px,3.4vw,40px);line-height:1.3;letter-spacing:.1em}
+.motto-lead p{color:#b9c7da;line-height:1.9;margin:0;font-size:15px;position:relative;z-index:1}
+.f-motto{color:var(--glow)!important;letter-spacing:.2em;font-weight:600;font-size:15px}
+@media (max-width:860px){
+  .motto{padding:80px 0 60px;margin-top:50px}
+  .mt-words{margin-bottom:36px}
+  .mt-eq{grid-template-columns:1fr}
+  .mt-cell+.mt-cell{border-left:0;border-top:1px solid rgba(94,224,106,.28)}
+  .mt-big{font-size:52px}
+  .mt-line{grid-template-columns:1fr 1fr;row-gap:26px}
+  .mt-line::before{display:none}
+  .motto-lead{grid-template-columns:1fr;gap:16px;padding:28px 22px}
+  .h-motto{letter-spacing:.14em}
+}
